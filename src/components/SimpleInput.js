@@ -2,8 +2,6 @@
 // If only interested once, when form is submitted, ref might be better
 // For Instant validation, after every keystroke, State would do the trick.
 // State is also good if we want to reset the entered input
-import { useState } from "react";
-
 import useInput from "../hooks/use-Input"
 
 const SimpleInput = (props) => {
@@ -61,7 +59,7 @@ const SimpleInput = (props) => {
         {nameInputHasError && <p className="error-text">Name must not be empty.</p>}
       </div>
       <div className={emailInputClasses}>
-        <label htmlFor='name'>Email</label>
+        <label htmlFor='email'>Email</label>
         <input
           type='email'
           id='email'
